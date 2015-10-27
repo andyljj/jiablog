@@ -4,17 +4,35 @@
     <head>
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <title>{{ page.title }}</title>
-      <script type="text/javascript">
-      alert('default');
-
-      </script>
+      <style type="text/css">
+     .head,.main,.mid,.right{
+        float: left;
+      }
+      .head{
+        width: 100%;
+        background: #123;
+      }
+      .left{
+        width: 20%;
+        background: #445;
+      }
+      .mid{
+        width: 60%;
+        background: #265;
+      }
+      .right{
+        width: 20%;
+        background: #087;
+      }
+      </style> 
     </head>
     <body>
-这是default<br><br><br><br>
+      <div class="head">head</div>
+      <div class="left">left</div>
+      <div class='mid'>{{ content }}</div>
+      <div class="right">right</div>
 
-
-
-      {{ content }}
+      
 
     </body>
 </html>
